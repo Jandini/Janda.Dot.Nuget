@@ -1,7 +1,7 @@
 @echo off
 call .version>nul
 
-set DOT_BASE_NAME=Janda.Dot.Package
+set DOT_BASE_NAME=Janda.Dot.NugetPackage
 
 set PACKAGE=%DOT_BASE_NAME%.%DOT_GIT_VERSION%.nupkg
 if "%OUTPUT_DIR%" equ "" set OUTPUT_DIR=bin
