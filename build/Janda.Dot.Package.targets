@@ -41,5 +41,4 @@
     <Message Text="Skipping copy to build repository. The environment variable DOT_CID_BUILD_PATH doesn't exist." Importance="high" />
   </Target>
 
-
 </Project>
