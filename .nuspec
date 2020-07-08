@@ -7,7 +7,7 @@
     <authors>Matt Janda</authors>
     <owners>Matt Janda</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Pack target dot package</description>
+    <description>Nuget packaging targets for Janda.Dot.CLI</description>
     <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
