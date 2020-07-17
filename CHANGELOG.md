@@ -7,8 +7,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* "Add jenkins shared library" ([8fdba19](http://nas/matt/Janda.Dot.Nuget/commit/8fdba19fc0294fbec96da79f17a9a2e6a74862ef))
-* Rename package ([8c15fe0](http://nas/matt/Janda.Dot.Nuget/commit/8c15fe089650053b407458f103f6fd1c6a4b15c0))
+* Add jenkins shared library ([2a77197](http://nas/matt/Janda.Dot.Nuget/commit/2a771977c86f08bbcc90878ba8a81bb968ace2cb))
+* Rename package ([43a8932](http://nas/matt/Janda.Dot.Nuget/commit/43a89324bc67df221275fd9cbaeeea4863cac7fb))
 
 ## [0.2.0](http://nas/matt/Janda.Dot.Nuget/compare/0.1.0...0.2.0) (2020-07-07)
 
