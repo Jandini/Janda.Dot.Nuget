@@ -23,22 +23,22 @@
       <OutputPackagePath Condition="'$(IncludeSymbols)' == 'true'">$(OutputPath)..\$(OutputPackageName).symbols.nupkg</OutputPackagePath>
     </PropertyGroup>
 
-    <Message Text="Janda.Dot.NugetPackage -> Branch name: $(GitVersion_BranchName)" Importance="high" />
-    <Message Condition="'$(GitVersion_BranchName)' != 'master'" Text="Janda.Dot.NugetPackage -> Include symbols: $(IncludeSymbols)" Importance="high" />
+    <Message Text="Janda.Dot.Nuget -> Branch name: $(GitVersion_BranchName)" Importance="high" />
+    <Message Condition="'$(GitVersion_BranchName)' != 'master'" Text="Janda.Dot.Nuget -> Include symbols: $(IncludeSymbols)" Importance="high" />
   </Target>
 
   <Target Condition=" '$(PackageBuildPath)' != '' " Name="CopyPackage" AfterTargets="Pack" DependsOnTargets="GetProperties">
-    <Message Text="Janda.Dot.NugetPackage -> Copying $(OutputPackagePath) to $(BuildsDir)" Importance="high" />
+    <Message Text="Janda.Dot.Nuget -> Copying $(OutputPackagePath) to $(BuildsDir)" Importance="high" />
     <Copy SourceFiles="$(OutputPackagePath)" DestinationFiles="$(BuildsDir)\$(OutputPackageName).nupkg" />
   </Target>
 
   <Target Condition=" '$(PackageTargetFeed)' != '' " Name="AddPackage" AfterTargets="Pack" DependsOnTargets="GetProperties">
-    <Message Text="Janda.Dot.NugetPackage -> Adding $(OutputPackagePath) package to $(PackageTargetFeed)" Importance="high" />    
+    <Message Text="Janda.Dot.Nuget -> Adding $(OutputPackagePath) package to $(PackageTargetFeed)" Importance="high" />    
     <Exec Command="nuget add $(OutputPackagePath) -source $(PackageTargetFeed)" />
   </Target>
 
   <Target Condition=" '$(PackageBuildPath)' == '' " Name="BuildPathWarning" AfterTargets="Pack" >
-    <Message Text="Janda.Dot.NugetPackage -> Skipping copy to build repository. The environment variable DOT_CID_BUILD_PATH doesn't exist." Importance="high" />
+    <Message Text="Janda.Dot.Nuget -> Skipping copy to build repository. The environment variable DOT_CID_BUILD_PATH doesn't exist." Importance="high" />
   </Target>
 
 </Project>
